@@ -12,7 +12,7 @@ I am 30 years old. I am an energy engineer. Now I do not know where my path of s
 * HTML
 * CSS
 * Photoshop
-## Code Example
+## Code Examples
 ```javascript
 let first_name=prompt('what is your name?',); 
 let result=prompt('how old are you?',); 
@@ -28,5 +28,5 @@ alert(`${first_name}, you are ${result} years old`);
 ## My project
 * [Landin page "StartEx"](https://hello3world.github.io/landing-page-1/)
 ## Languages
-* Russian - native speaker;
+* Russian - native speaker
 * English - A1 (A2 *in process…*) 
