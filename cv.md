@@ -12,7 +12,7 @@ I am 30 years old. I am an energy engineer. Now I do not know where my path of s
 * HTML
 * CSS
 * Photoshop
-## Code Examples
+## Code Example
 ```javascript
 let first_name=prompt('what is your name?',); 
 let result=prompt('how old are you?',); 
