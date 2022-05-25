@@ -5,18 +5,17 @@
 * **E-mail**: e.pavlovich29@gmail.com
 * **GitHub**: [hello3world](https://github.com/hello3world) 
 * **Telegram**: [@e_pavlovich](https://t.me/e_pavlovich)
+* **Discord**: yauheni#2864
 ## About Me
-I am 30. I am an energy engineer.
+I am 30 years old. I am an energy engineer. Now I do not know where my path of self-education will lead. But I know for sure that my work worries me, and coding calms me down.
 ## Skills
 * HTML
 * CSS
 * Photoshop
 ## Code Examples
-```
+```javascript
 let first_name=prompt('what is your name?',); 
-
 let result=prompt('how old are you?',); 
-
 alert(`${first_name}, you are ${result} years old`); 
 ```
 ## Education
