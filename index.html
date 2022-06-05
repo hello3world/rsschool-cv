@@ -1,46 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/icons8-гомер-симпсон-96.png">
+  <title>CV</title>
 </head>
+
 <body>
-  <h1 id="yauheni-paulovich">Yauheni Paulovich</h1>
+  <div class="container">
+
+    <div class="wrapper-left-column">
+
+      <aside class="aside">
+
+        <div>
+          <div class="foto-person">
+            <img src="./assets/img/ava.jpg" class="ava-image" alt="">
+          </div>
+        </div>
+
+        <nav class="nav">
+          <ul class=" nav-list">
+            <li> <a href="#summary" class="nav-link">About Me</a></li>
+            <li> <a href="#contact_info" class="nav-link">Contact Info</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#code_examples" class="nav-link">Code Examples</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#my_project" class="nav-link">My project</a></li>
+            <li><a href="#languages" class="nav-link">Languages</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <footer>
+        ccskrf
+      </footer>
+    </div>
+
+    <div class="wrapper-right-column">
+
+      <header class="person-info">
+        <h1>Yauheni Paulovich</h1>
+        <h3>Biginner frontend developer</h3>
+      </header>
+
+      <main>
+        <section>
+          <h2 id="summary">About Me</h2>
+          <div class="section-item">
+            <p>I am 30 years old. I am an energy engineer. Now I do not know where my path of self-education will lead.
+              But I know for sure that my work worries me, and coding calms me down.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="contact_info" >Contact Info</h2>
+          <div class="section-item">
+            <ul class="info-list">
+              <li class="info-list-item"><strong>Location</strong>: Minsk, Belarus</li>
+              <li class="info-list-item"><strong>Phone</strong>: +375 44 58-67-240</li>
+              <li class="info-list-item"><strong>E-mail</strong>: e.pavlovich29@gmail.com</li>
+              <li class="info-list-item"><strong>GitHub</strong>: <a href="https://github.com/hello3world">hello3world</a></li>
+              <li class="info-list-item"><strong>Telegram</strong>: <a href="https://t.me/e_pavlovich">@e_pavlovich</a></li>
+              <li class="info-list-item"><strong>Discord</strong>: yauheni#2864</li>
+            </ul>
+          </div>
+        </section class="section-item">
+
+        <section>
+          <h2 id="skills">Skills</h2>
+          <div class="section-item">
+            <ul class="skills-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Photoshop</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="code_examples">Code Examples</h2>
+          <div class="section-item">
+            <code>
+              let first_name=prompt('what is your name?',);<br> 
+let result=prompt('how old are you?',);<br>  
+alert(`${first_name}, you are ${result} years old`);
+            </code>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="code_examples">Education</h2>
+          <div class="section-item">
+            <ul>
+              <li>Belarusian National Technical University
+                <ul>
+                  <li>qualification "Power supply"</li>
+                  <li>magistracy "Energy"</li>
+                </ul>
+              </li>
+              <li>QA Academy: Training course "Basics of software testing"</li>
+              <li>School of IT-training "KODE": Practical course "HTML layout designer"</li>
+              <li>RS Scholl: JavaScript/Front-end. Stage 0 (in process…)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2 id="my_project">My project</h2>
+          <div class="section-item">
+            <a href="https://hello3world.github.io/landing-page-1/">Landin page &quot;StartEx&quot;</a>
+        </section>
+
+        <section>
+          <h2 id="languages">Languages</h2>
+          <div class="section-item">
+            <ul>
+              <li>Russian - native speaker</li>
+              <li>English - A1 (A2 <em>in process…</em>)</li>
+            </ul>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+  </div>
+  <!--
 <h2 id="contact-info-">Contact Info:</h2>
 <ul>
-<li><strong>Location</strong>: Minsk, Belarus</li>
-<li><strong>Phone</strong>: +375 44 58-67-240</li>
-<li><strong>E-mail</strong>: e.pavlovich29@gmail.com</li>
-<li><strong>GitHub</strong>: <a href="https://github.com/hello3world">hello3world</a> </li>
-<li><strong>Telegram</strong>: <a href="https://t.me/e_pavlovich">@e_pavlovich</a></li>
-<li><strong>Discord</strong>: yauheni#2864<h2 id="about-me">About Me</h2>
-I am 30 years old. I am an energy engineer. Now I do not know where my path of self-education will lead. But I know for sure that my work worries me, and coding calms me down.<h2 id="skills">Skills</h2>
-</li>
-<li>HTML</li>
-<li>CSS</li>
-<li>Photoshop<h2 id="code-examples">Code Examples</h2>
-<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> first_name=prompt(<span class="hljs-string">'what is your name?'</span>,); 
-<span class="hljs-keyword">let</span> result=prompt(<span class="hljs-string">'how old are you?'</span>,); 
-alert(<span class="hljs-string">`<span class="hljs-subst">${first_name}</span>, you are <span class="hljs-subst">${result}</span> years old`</span>);
-</code></pre>
-<h2 id="education">Education</h2>
-</li>
-<li>Belarusian National Technical University<ul>
-<li>qualification &quot;Power supply&quot;</li>
-<li>magistracy &quot;Energy&quot;</li>
-</ul>
-</li>
-<li>QA Academy: Training course &quot;Basics of software testing&quot;</li>
-<li>School of IT-training &quot;KODE&quot;: Practical course &quot;HTML layout designer&quot;</li>
-<li>RS Scholl: JavaScript/Front-end. Stage 0 (<em>in process…</em>)<h2 id="my-project">My project</h2>
-</li>
-<li><a href="https://hello3world.github.io/landing-page-1/">Landin page &quot;StartEx&quot;</a><h2 id="languages">Languages</h2>
-</li>
-<li>Russian - native speaker</li>
-<li>English - A1 (A2 <em>in process…</em>) </li>
-</ul>
+<li></li>
+<li></li>
+<li></li>
+<li> </li>
+<li></li>
+<li></h2>
+-->
 </body>
+
 </html>
