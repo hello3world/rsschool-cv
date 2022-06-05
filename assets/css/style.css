@@ -39,7 +39,7 @@ body {
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
-  box-shadow: 10px 0 10px rgba(149, 149, 149, 0.1)
+  box-shadow: 10px 0 10px rgba(149, 149, 149, 0.1), -10px 0 10px rgba(149, 149, 149, 0.1);
 }
 
 .wrapper-left-column {
@@ -49,7 +49,7 @@ body {
   background-color: #1d252d;
   position: relative;
   min-height: 100%;
-
+  justify-content: space-between;
 }
 
 .wrapper-right-column {
@@ -63,26 +63,47 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 90px;
+  padding: 45px 0 90px 0;
   background-image: url("../img/ellepse_l-m.png");
   background-repeat: no-repeat;
   background-position: 5px 10px;
   background-attachment: fixed;
-  padding-bottom: 90px;
   /*position: sticky;
   top: 0;*/
-
 }
 
 footer {
-
-position: absolute;
+/*position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 40px;
-
+  height: 40px;*/
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: flex-end;
 }
+
+.footer-left {
+  display: table-cell;
+font-size: 12px;
+vertical-align: bottom;
+}
+
+.txt-dec-header {
+ font-weight: 600;
+ color: #777;
+}
+
+.txt-dec-content a, .txt-dec-content a:active, .txt-dec-content a:visited {
+text-decoration: none;
+color: #7e848c;
+}
+
+.txt-dec-content a:hover {
+  text-decoration: none;
+  color: #7208ff;
+  }
 
 .person-info {
   padding: 15px 150px 90px 50px;
@@ -90,11 +111,12 @@ position: absolute;
 
 h1 {
   font-family: lato-black;
-  font-size: 85px;
+  font-size: 75px;
   letter-spacing: 3px;
-  color: #000;
+  color: #1d252d;
   margin-bottom: 30px;
   line-height: 85px;
+  padding: 25px 70px 0 0;
 }
 
 h2 {
@@ -121,9 +143,9 @@ h2::after {
 h3 {
   font-family: lato-medium;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 2px;
-  color: #000;
+  color: #1d252d;
 }
 
 ul {
@@ -131,12 +153,9 @@ ul {
   list-style: none;
 }
 
-
 .section-item {
   padding: 35px 20px 20px 50px;
 }
-
-
 
 .foto-person {
   margin: 0 auto 50px;
@@ -145,23 +164,18 @@ ul {
 .ava-image {
   width: 250px;
   height: 250px;
-  border-radius: 200px;
+  /*border-radius: 200px;*/
   /* Радиус скругления */
-  border: 5px solid #7208ff;
- 
+  /*border: 5px solid #7208ff;*/
   /* Параметры рамки */
-  box-shadow: 0 0 7px #666;
+
   /* Параметры тени */
-  
+  border-image:url("../img/border-img.png") 30 fill / 25px / 8px;
 }
 
 .ava-image:hover {
   filter: contrast(110%) brightness(110%);
   transition: .3s;
-}
-
-.nav {
-
 }
 
 .nav-list {
@@ -225,7 +239,105 @@ main {
   width: 50%;
 }*/
 
-main .skills-list li::before {
+/*main .skills-list li::before {
+  content: '';
+  background: #662974;
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  display: inline-block;
+
+  color: white;
+  text-align: center;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+}*/
+
+.skills-list-item {
+  position: relative;
+  margin-left: 30px;
+}
+
+.skills-list-item:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -28px;
+  width: 20px;
+  height: 20px; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.skills-list-item:nth-child(1):before {
+  background-image: url("../img/html-5.png");
+}
+
+.skills-list-item:nth-child(2):before {
+  background-image: url("../img/css-3.png");
+}
+
+.skills-list-item:nth-child(3):before {
+  background-image: url("../img/photoshop.png");
+}
+
+main>section {
+  padding-bottom: 20px;
+}
+
+.info-list-item {
+position: relative;
+margin-left: 30px;
+}
+
+.info-list-item:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -28px;
+  width: 20px;
+  height: 20px; 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.info-list-item:nth-child(1):before {
+  background-image: url("../img/compass.png");
+}
+
+.info-list-item:nth-child(2):before {
+  /*top: 3px;
+  left: 0px;
+  width: 21px;
+  height: 21px;*/
+  background-image: url("../img/telephone-call.png");
+}
+
+.info-list-item:nth-child(3):before {
+  /*top: 4px;
+  left: 0px;
+  width: 19px;
+  height: 19px;*/
+  background-image: url("../img/email.png");
+}
+
+.info-list-item:nth-child(4):before {
+  /*top: 3px;
+  left: 0px;
+  width: 21px;
+  height: 21px;*/
+  background-image: url("../img/github.png");
+}
+
+.info-list-item:nth-child(5):before {
+  background-image: url("../img/telegram.png");
+}
+
+.info-list-item:nth-child(6):before {
+  background-image: url("../img/discord.png");
+}
+
+.lang-list-item::before, .edu-list-item:before {
   content: '';
   background: #662974;
   width: 7px;
@@ -239,53 +351,25 @@ main .skills-list li::before {
   vertical-align: middle;
 }
 
-main>section {
-  padding-bottom: 20px;
+.edu-sublist-item:before {
+  content: '';
+  background: #77697a;
+  width: 7px;
+  height: 7px;
+  left: 20px;
+  border-radius: 100%;
+  display: inline-block;
+
+  color: white;
+  text-align: center;
+  margin-right: 0.6rem;
+  vertical-align: middle;
+  margin-left: 20px;
 }
 
-.info-list-item {
-position: relative;
-}
 
-.info-list-item:before {
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 0px;
-  width: 24px;
-  height: 24px; 
-  background-size: contain;
-  background-repeat: no-repeat;
-}
 
-.info-list-item:nth-child(1):before {
-  background-image: url("../img/icons8-гомер-симпсон-32.png");
-}
-
-.info-list-item:nth-child(2):before {
-  top: 3px;
-  left: 0px;
-  width: 21px;
-  height: 21px;
-  background-image: url("../img/icons8-гомер-симпсон-32.png");
-}
-
-.info-list-item:nth-child(3):before {
-  top: 4px;
-  left: 0px;
-  width: 19px;
-  height: 19px;
-  background-image: url("../img/icons8-гомер-симпсон-32.png");
-}
-
-.info-list-item:nth-child(4):before {
-  top: 3px;
-  left: 0px;
-  width: 21px;
-  height: 21px;
-  background-image: url("../img/icons8-гомер-симпсон-32.png");
-}
-
-.info-list-item:nth-child(5):before {
-  background-image: url("../img/icons8-гомер-симпсон-32.png");
+.rss {
+  width: 121px;
+  height: 45px;
 }
