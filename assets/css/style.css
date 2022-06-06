@@ -1,17 +1,17 @@
 /*link other fonts*/
 @font-face {
   font-family: lato-black;
-  src: url(/rsschool-cv/assets/fonts/Lato-Black.ttf);
+  src: url(/assets/fonts/Lato-Black.ttf);
 }
 
 @font-face {
   font-family: lato-medium;
-  src: url(/rsschool-cv/assets/fonts/Lato-Medium.ttf);
+  src: url(/assets/fonts/Lato-Medium.ttf);
 }
 
 @font-face {
   font-family: lato-regular;
-  src: url(/rsschool-cv/assets/fonts/Lato-Regular.ttf);
+  src: url(/assets/fonts/Lato-Regular.ttf);
 }
 
 * {
