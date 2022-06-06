@@ -38,12 +38,9 @@ h1, h2, h3, h4, h5, h6, p, td, th {
 }
 
 a:link, a:visited, a:hover, a:active{
-	cursor: pointer;
 	cursor: hand;
     text-decoration:  none;
 }
-
-:-moz-any-link:focus, input {outline: none;}
 
 a img {	border: none;}
 
