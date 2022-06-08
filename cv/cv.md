@@ -7,7 +7,13 @@
 * **Telegram**: [@e_pavlovich](https://t.me/e_pavlovich)
 * **Discord**: yauheni#2864
 ## About Me
-I am 30 years old. I am an energy engineer. Now I do not know where my path of self-education will lead. But I know for sure that my work worries me, and coding calms me down.
+I am 30. I am an energy engineer. All 9 years of work in the power industry, I diligently acquired new
+knowledge and approached the performance of my duties responsibly. Now I know the entire technological
+chain of electricity production from a light bulb in an apartment to a power plant. With great knowledge
+came the realization that my resource in the profession was exhausted. If I don’t continue to develop further in my own way, then in a few years I will hate my job. Why did I choose frontend? I tried many directions in search of my
+new recognition, but when I started to make the layout of the site, I realized that it calms and inspires
+me. With these I am entering a new profession and I plan to reach great heights, and maybe even write my
+name in the history of Belarusian IT)
 ## Skills
 * HTML
 * CSS
