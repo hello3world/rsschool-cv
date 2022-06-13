@@ -43,9 +43,8 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
-  box-shadow: 10px 0 10px rgba(149, 149, 149, 0.05), -10px 0 10px rgba(149, 149, 149, 0.1);
 }
 
 .wrapper-left-column {
@@ -53,13 +52,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: #1d252d;
-  width: 506px;
+  width: 35%;
 }
 
 .wrapper-right-column {
   display: flex;
   flex-direction: column;
-  width: 934px;
+  width: 65%;
 }
 
 /*section design for "wrapper-left-column"*/
@@ -133,7 +132,8 @@ body {
 /*Block "FOOTER"*/
 footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: center;
   padding: 10px 20px;
 }
 
