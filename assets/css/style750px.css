@@ -1,33 +1,8 @@
-/*link other fonts*/
-@font-face {
-  font-family: lato-black;
-  src: url(../fonts/Lato-Black.ttf);
-}
-
-@font-face {
-  font-family: lato-medium;
-  src: url(../fonts/Lato-Medium.ttf);
-}
-
-@font-face {
-  font-family: lato-regular;
-  src: url(../fonts/Lato-Regular.ttf);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  min-height: 100vh;
-}
-
 /*Heading design*/
 h1 {  
-  margin-bottom: 30px;
-  padding: 50px 70px 0 0;
-  font: 75px/78px lato-black;
+  margin-bottom: 15px;
+  padding: 25px 35px 0 0;
+  font: 37px/39px lato-black;
   letter-spacing: 3px;
   color: #1d252d;
 }
@@ -35,7 +10,7 @@ h1 {
 h2 {
   position: relative;
   width: 80%;
-  padding: 10px 0 10px 50px;
+  padding: 5px 0 5px 25px;
   font: 20px lato-black;
   letter-spacing: 2px;
   color: #fff;
@@ -53,7 +28,7 @@ h2::after {
 }
 
 h3 {
-  font: 25px lato-medium;
+  font: 15px lato-medium;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #1d252d;
@@ -61,7 +36,7 @@ h3 {
 
 /*Page design*/
 body {
-  font: 16px/1.5 lato-regular;
+  font: 12px/1.5 lato-regular;
   color: #7e848c;
 }
 
@@ -101,9 +76,9 @@ body {
 }
 
 .foto-person-img {
-  width: 250px;
-  height: 250px;
-  border-image: url("../img/border-img.png") 30 fill / 25px / 8px;
+  width: 150px;
+  height: 150px;
+  border-image: url("../img/border-img.png") 30 fill / 15px / 6px;
 }
 
 .foto-person-img:hover {
@@ -122,7 +97,7 @@ body {
 .nav-link {
   padding: 0 12px;
   text-decoration: none;
-  line-height: 50px;
+  line-height: 35px;
   text-transform: uppercase;
   color: #fff;
 }
@@ -163,18 +138,18 @@ footer {
 }
 
 .footer-left {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .rss {
-  width: 121px;
-  height: 45px;
+  width: 60px;
+  height: 25px;
 }
 
 /*section design for "wrapper-right-column"*/
 /*Block "HEADER"*/
 .person-info {
-  padding: 15px 150px 90px 50px;
+  padding: 15px 140px 40px 50px;
 }
 
 /*Block "MAIN"*/
@@ -185,7 +160,7 @@ main {
 
 /*Block "SECTION"*/
 .section-item {
-  padding: 35px 245px 60px 50px;
+  padding: 35px 145px 60px 50px;
 }
 
 .section-item-paragraf {
@@ -211,16 +186,16 @@ main {
 
 .skills-list-item {
   position: relative;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .skills-list-item:before {
   content: "";
   position: absolute;
-  top: 1px;
+  top: 2px;
   left: -28px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -239,16 +214,16 @@ main {
 
 .info-list-item {
   position: relative;
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .info-list-item:before {
   content: "";
   position: absolute;
-  top: 1px;
+  top: 2px;
   left: -28px;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background-size: contain;
   background-repeat: no-repeat;
 }
