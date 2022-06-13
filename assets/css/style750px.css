@@ -52,13 +52,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: #1d252d;
-  width: 35%;
+  width: 506px;
 }
 
 .wrapper-right-column {
   display: flex;
   flex-direction: column;
-  width: 65%;
+  width: 934px;
 }
 
 /*section design for "wrapper-left-column"*/
