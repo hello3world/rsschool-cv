@@ -37,12 +37,12 @@ alert(`${first_name}, you are ${result} years old`);
 
 ## Education
 
+- RS Scholl: JavaScript/Front-end. Stage 0 (_in process…_)
+- School of IT-training "KODE": Practical course "HTML layout designer"
+- QA Academy: Training course "Basics of software testing"
 - Belarusian National Technical University
   - qualification "Power supply"
   - magistracy "Energy"
-- QA Academy: Training course "Basics of software testing"
-- School of IT-training "KODE": Practical course "HTML layout designer"
-- RS Scholl: JavaScript/Front-end. Stage 0 (_in process…_)
 
 ## My project
 
