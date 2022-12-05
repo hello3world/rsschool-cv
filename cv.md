@@ -21,8 +21,10 @@ name in the history of Belarusian IT)
 
 ## Skills
 
+- JS
 - HTML
 - CSS
+- GIT
 - Photoshop
 
 ## Code Examples
