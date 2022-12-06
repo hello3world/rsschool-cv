@@ -8,13 +8,12 @@ body {
   flex-direction: column;
   height: 100vh;
   min-height: 100%;
-
-
+  background: url("../img/pattern-11.svg") repeat;
+  background-repeat: repeat;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
   font-size: 16px;
   color: #343c42;
   /* color: #4a545d; */
-  background: #eff3f7 url("../img/pattern.png");
 }
 
 .container {
@@ -42,9 +41,9 @@ body {
 .tab-item {
   min-height: 100vh;
   padding: 30px;
-  
-    margin-bottom: 30px;
-    background: #eff3f7;
+
+  margin-bottom: 30px;
+  background: #eff3f7;
 }
 
 .section {
@@ -180,7 +179,7 @@ body {
   /* display: flex;
   justify-content: space-between;
    */
-   text-align: justify;
+  text-align: justify;
   margin-bottom: 20px;
 
 }
@@ -190,17 +189,18 @@ body {
   padding: 6px 20px 0px 0;
   /* margin: 0 30px 30px 0; */
 }
+
 .logo__name {
   font-size: 29px;
-    font-weight: bolder;
-    color: #657694;
+  font-weight: bolder;
+  color: #657694;
 }
 
 .logo__job {
   font-size: 22px;
-    font-weight: 600;
-    margin: 0 0 8px 0;
-    color: #657694;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #657694;
 }
 
 .about__desc {}
@@ -227,18 +227,18 @@ body {
 }
 
 .code__variable {
-  color:#3838d2;
-  font-weight:bold;
+  color: #3838d2;
+  font-weight: bold;
 }
 
 .code__name-variable {
-  color:#1ba3a3;
-  font-weight:bold;
+  color: #1ba3a3;
+  font-weight: bold;
 }
 
 .code__text {
-  color:#c94c1b;
-  font-weight:bold;
+  color: #c94c1b;
+  font-weight: bold;
 }
 
 .education {}
@@ -247,13 +247,11 @@ body {
 
 .edication__list {}
 
-.edication__item {
-
-}
+.edication__item {}
 
 .education__sub-item {
   list-style: square;
-    margin-left: 56px;
+  margin-left: 56px;
 }
 
 .edication__name {}
