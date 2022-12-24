@@ -1,6 +1,8 @@
 /*-----------Common setting------------*/
 * {
   box-sizing: border-box;
+
+
 }
 
 body {
@@ -214,7 +216,9 @@ body {
 .skills__list {}
 
 .skills__item {
-  position: relative;
+  background: url('/img/star-svgrepo-com.svg') no-repeat 0 4px;
+  background-size: 14px;
+  padding-left: 24px;
 }
 
 .code {}
@@ -248,6 +252,10 @@ body {
 .edication__list {}
 
 .edication__item {}
+
+.edication__item::marker {
+  color: #657694
+}
 
 .education__sub-item {
   list-style: square;
@@ -333,12 +341,6 @@ body {
 .contacts__icon {
   margin-right: 15px;
 }
-
-
-
-
-
-
 
 .footer {
   background-color: #5e5e5f;
