@@ -11,7 +11,6 @@ body {
   height: 100vh;
   min-height: 100%;
   background: url("../img/pattern-11.svg") repeat;
-  background-repeat: repeat;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
   font-size: 16px;
   color: #343c42;
@@ -216,7 +215,7 @@ body {
 .skills__list {}
 
 .skills__item {
-  background: url('/img/star-svgrepo-com.svg') no-repeat 0 4px;
+  background: url('./img/star-svgrepo-com.svg') no-repeat 0 4px;
   background-size: 14px;
   padding-left: 24px;
 }
