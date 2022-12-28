@@ -1,8 +1,6 @@
 /*-----------Common setting------------*/
 * {
   box-sizing: border-box;
-
-
 }
 
 body {
@@ -12,7 +10,7 @@ body {
   min-height: 100%;
   background: url("../img/pattern-11.svg") repeat;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   color: #343c42;
   /* color: #4a545d; */
 }
@@ -57,14 +55,10 @@ body {
   /* padding-left: 30px; */
 }
 
-
-
-
 /*----------- Scale ------------*/
 .scale {
   position: relative;
   display: flex;
-
   justify-content: start;
 }
 
@@ -91,7 +85,6 @@ body {
 .scale__active {
   background-color: #948cd9;
 }
-
 
 /*-----------Header------------*/
 .header {
@@ -135,7 +128,7 @@ body {
 .navigation__link {
   display: block;
   min-width: 120px;
-  color: #959aa8;
+  color: #343c42;
   padding: 10px 15px;
   transition: all 0.2s ease-in;
 }
@@ -161,7 +154,6 @@ body {
 
 .main__container {
   padding-top: 120px;
-
 }
 
 .main__columns {
@@ -215,7 +207,7 @@ body {
 .skills__list {}
 
 .skills__item {
-  background: url('./img/star-svgrepo-com.svg') no-repeat 0 4px;
+  background: url('/img/star-svgrepo-com.svg') no-repeat 0 7px;
   background-size: 14px;
   padding-left: 24px;
 }
@@ -250,9 +242,26 @@ body {
 
 .edication__list {}
 
-.edication__item {}
+.edication__item {
+  position: relative;
+  padding-left: 25px;
+}
+
+.edication__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  background: url(/img/university.svg);
+  width: 18px;
+  height: 20px;
+}
 
 .edication__item::marker {
+  color: #657694
+}
+
+.edication__item2::marker {
   color: #657694
 }
 
