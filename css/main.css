@@ -207,7 +207,7 @@ body {
 .skills__list {}
 
 .skills__item {
-  background: url('/img/star-svgrepo-com.svg') no-repeat 0 7px;
+  background: url('../img/star-svgrepo-com.svg') no-repeat 0 7px;
   background-size: 14px;
   padding-left: 24px;
 }
@@ -252,7 +252,7 @@ body {
   position: absolute;
   left: 0;
   top: 5px;
-  background: url(/img/university.svg);
+  background: url(../img/university.svg);
   width: 18px;
   height: 20px;
 }
