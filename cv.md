@@ -38,18 +38,30 @@ In my current job, I often have to take the initiative by following implicit ord
 
 ## Code Examples
 
+**Combine objects KATA from CODEWARS:** _Your task is to write a function that takes two or more objects and returns a new object which combines all the input objects. All input object properties will have only numeric values. Objects are combined together so that the values of matching keys are added together._
+
 ```javascript
-let first_name = prompt('what is your name?');
-let result = prompt('how old are you?');
-alert(`${first_name}, you are ${result} years old`);
+function combine(){
+  let comboObj = {};
+  for(let i = 0; i < arguments.length; i++){
+    for(let key in arguments[i]){
+      if(!comboObj[key]){
+      comboObj[key] = arguments[i][key];
+      }
+      else {
+        comboObj[key] += arguments[i][key];
+      }
+    }
+  }
+return comboObj;
+}
 ```
 
 ---
 
 ## Education
 
-- RS Scholl: JavaScript/Front-end. Stage 0 (_in process…_)
-- School of IT-training "KODE": Practical course "HTML layout designer"
+- RS School: JavaScript/Front-end. Stage 0
 - QA Academy: Training course "Basics of software testing"
 - Belarusian National Technical University
   - qualification "Power supply"
@@ -59,16 +71,21 @@ alert(`${first_name}, you are ${result} years old`);
 
 ## My project
 
-- [Landin page "StartEx"](https://hello3world.github.io/landing-page-1/)
+- [CV](https://hello3world.github.io/myResume/)
+- [Plants](https://hello3world.github.io/plants/)
+- [Momentum](https://hello3world-momentum.netlify.app/)
 
 ---
 
 ## Awards
 
+- [Certificate RS School. Stage 0 (java-script)](https://app.rs.school/certificate/bcs5auvf)
+  ![RS School certificate](images/RS%20School%20certificate.png)
+
 ---
 
 ## Languages
 
-- Russian - native speaker
-- English - A1 (A2 _in process…_)
+- **Russian** - native speaker
+- **English** - A1 (A2 _in process…_)
   ![EFSET rezults](images/EFSET%20rezults.png)
