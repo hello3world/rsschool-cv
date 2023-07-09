@@ -1,0 +1,285 @@
+.main {
+  width: 100%;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8.68%;
+    padding: 6.25% 11.458%;
+  }
+
+  &__statistics {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    width: 24.3%;
+  }
+
+  &__biografy {
+    display: flex;
+    flex-direction: column;
+    row-gap: 66px;
+    width: 56%;
+  }
+}
+
+.skillset {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {}
+}
+
+.awards {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {}
+
+  &__link {
+    color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgba(6, 153, 166, 0.45);
+
+    &:hover {
+      border-bottom-width: 0;
+    }
+  }
+}
+
+.careerTraits {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  &__item {}
+
+  &__item--bold {
+    font-weight: 700;
+  }
+}
+
+.recentWorks {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {
+    /*     position: relative;
+
+    &:hover {
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 200px;
+        height: 146px;
+        position: absolute;
+        bottom: 35px;
+        left: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+        opacity: 1;
+      }
+    } */
+
+    /* &:nth-child(1) {
+  &:hover {
+    &::after {
+      background-image: url('/assets/img/project_Plants.png');
+    }
+  }
+}
+
+&:nth-child(2) {
+  &:hover {
+    &::after {
+      background-image: url('/assets/img/project_Vilocity.png');
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+&:nth-child(3) {
+  &:hover {
+    &::after {
+      background-image: url('/assets/img/project_Vilocity.png');
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+} */
+  }
+
+  &__link {
+    position: relative;
+
+    padding: 0 25px 0 0;
+
+    font-weight: 700;
+    color: $colorPrimary;
+
+
+    &:hover {
+      &::after {
+        content: "\2192";
+        position: absolute;
+        right: -5px;
+      }
+    }
+
+    &::after {
+      transition: right ease-in-out 0.3s;
+      content: "\2192";
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.language {
+
+  &__title {
+    @include header3;
+  }
+
+  &__list {}
+
+  &__item {}
+}
+
+
+.aboutMe {
+
+  &__title {
+    @include header2;
+  }
+
+  &__text {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+  }
+
+}
+
+.indent {
+  padding: 12.9% 0 0;
+
+  &__rectangle {
+    width: 71px;
+    height: 10px;
+
+    background: #0699A6;
+  }
+}
+
+.indent--padBottom {
+  padding: 0 0 80px;
+}
+
+.experience {
+
+  &__title {
+    @include header2;
+  }
+
+  &__unit {}
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+  }
+
+  &__job {
+    @include header3;
+    letter-spacing: 1px;
+  }
+
+  &__date {}
+
+  &__desc {}
+}
+
+.education {
+
+  &__title {
+    @include header2;
+
+    margin-bottom: 20px;
+  }
+
+  &__unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 10px;
+  }
+
+  &__name {
+    @include header3;
+    letter-spacing: 1px;
+  }
+
+  &__university {
+    font-weight: 700;
+  }
+
+  &__date {
+    line-height: 1.33;
+  }
+}
+
+.code {
+
+  &__title {
+    @include header2;
+  }
+
+  &__text {
+    padding: 0 10px 10px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &__content {}
+
+  summary {
+    margin: 20px 0;
+  }
+
+  &__btn {
+    font-weight: 600;
+    color: black;
+
+    &:hover {
+      border-bottom-width: 0;
+      color: red;
+      text-decoration: line-through;
+    }
+  }
+}
