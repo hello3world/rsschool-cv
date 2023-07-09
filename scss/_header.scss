@@ -1,0 +1,148 @@
+.header {
+  width: 100%;
+
+  .header--bg {
+    background-image: url('../../assets/img/bgHeader.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+  }
+
+  &__toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2.08% 4.86% 0 0;
+  }
+
+  .contacts {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-120%);
+    transition: background 1s ease-in-out,
+      visibility 1s ease-in-out,
+      opacity 1s ease-in-out,
+      transform 1s ease-in-out;
+
+    &__close-btn {
+      position: absolute;
+      top: 0;
+      right: -50px;
+      border: 0;
+      color: $colorPrimary;
+      cursor: pointer;
+      font-size: 20px;
+      background: transparent;
+      opacity: 0;
+      transition: opacity ease-in 0.3s;
+    }
+
+    .close_btn--opacity {
+      opacity: 1;
+    }
+
+    &__close-btn:focus {
+      outline: none;
+    }
+  }
+
+  .contacts--position {
+    margin-left: 70px;
+  }
+
+  &__socialList {
+    column-gap: 26px;
+  }
+
+  .visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 17%;
+
+    position: relative;
+
+    width: 100%;
+    /*  max-width: 1110px; */
+    margin: 0 auto;
+    padding: 8.68% 11.25% 19.5138%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 44.347%;
+      left: 25.5277%;
+      width: 152px;
+      height: 152px;
+      background-image: url('../../assets/greeting.svg');
+      background-repeat: no-repeat;
+
+      @media (max-width:1200px) {
+        display: none;
+      }
+    }
+  }
+
+  &__info {
+    width: 100%;
+  }
+
+  &__avatar {
+    width: 27.3%;
+    height: 27.3%;
+  }
+
+  &__job {
+    margin-bottom: 0.69%;
+
+    @include header3;
+  }
+
+  &__name {
+    margin-bottom: 6.3%;
+
+    font-family: 'Playfair Display';
+    font-weight: 900;
+    font-size: 650%;
+    line-height: 0.89;
+    letter-spacing: -2px;
+    color: $colorText;
+
+    @media (max-width:950px) {
+      font-size: 450%;
+    }
+
+    @media (max-width:645px) {
+      font-size: 350%;
+    }
+
+    @media (max-width:450px) {
+      font-size: 250%;
+    }
+  }
+
+  &__btn {
+    padding: 3% 9.448%;
+
+    font-family: 'PT Sans Narrow';
+    font-weight: 700;
+    font-size: 130%;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 0.1vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: $colorPrimary;
+
+  }
+}
